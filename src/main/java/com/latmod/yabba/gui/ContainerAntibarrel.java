@@ -52,7 +52,7 @@ public class ContainerAntibarrel extends ContainerBase
 
 			if (player instanceof EntityPlayerMP)
 			{
-				new MessageAntibarrelUpdate(tile).sendTo((EntityPlayerMP) player);
+			  MessageAntibarrelUpdate.send(tile, (EntityPlayerMP) player);
 			}
 		}
 	}
