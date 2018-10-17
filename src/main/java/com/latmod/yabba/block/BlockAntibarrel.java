@@ -87,7 +87,7 @@ public class BlockAntibarrel extends BlockSpecialDrop
 
 			if (tileEntity instanceof TileAntibarrel)
 			{
-				new MessageAntibarrelUpdate((TileAntibarrel) tileEntity).sendTo((EntityPlayerMP) player);
+			  MessageAntibarrelUpdate.send((TileAntibarrel) tileEntity, (EntityPlayerMP) player);
 				YabbaGuiHandler.ANTIBARREL.open(player, pos);
 			}
 		}
