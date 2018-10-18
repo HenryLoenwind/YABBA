@@ -88,4 +88,9 @@ public class TileAntibarrel extends TileBase
 	{
 		contents.copyFrom(AntibarrelData.get(stack));
 	}
+	
+	@Override
+	public void writeToPickBlock(ItemStack stack) {
+	}
+	
 }
